@@ -1,0 +1,67 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Mar 12 12:05:06 2020
+
+@author: Max
+"""
+
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Feb  7 12:53:58 2020
+
+@author: u341138
+"""
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+def f(x_i):
+    # your code here!
+    fx = 0.0
+    
+    return fx
+
+def F_inv(u_i):
+    # your code here
+    F_inv_u = 0.0
+    return F_inv_u
+    
+    
+m = 200 # some high number so we see smooth plots of f(x) 
+
+
+
+l = # lower bound for x
+b = # upper bound for x
+x = np.linspace(l, b, num=m) # we plot f(x) and g(x) for these values
+
+# Want to compute f(x_i) for all these points, for example for plotting? Use:
+# f_all_x = [f(x_i) for x_i in x]
+
+plt.figure()
+plt.plot(x, f_all_x, lw=2, color='k', label='$f(x)$')
+# add additional plotting aspects, such as axis labels!
+
+n = # number of samples
+
+samples = list()
+
+for i in range(n):
+    
+    # use the inverse sampling procedure to create x_i
+    
+    samples.append(x_i)
+
+# plot the samples using plt.hist()
+# The argument 'bins=' determines in how many small subsets you visualize the
+# samples. If you use very few, your approximation looks crude. I would use at
+# least 50. 
+
+#### Plotting tips
+# To plot your large collection of samples, use a histogram, via plt.hist()
+# It needs the arguments 'density=True', and 'histtype='stepfilled' or it will 
+# not visualize correctly!
+
+# If you want to plot a point (x_i, 0), you can use the argument 
+# 'clip_on=False'. This way, the point will be plotted on top of the axis 
+# boundary, instead of being hidden behind it.
